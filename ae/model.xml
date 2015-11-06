@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+ <Attribute name="String" persistent="true" type="String" minsize="String" maxsize="String" comment="String" characterset="String"
+ required="true" signed="true" default="String" precision="0" encryption="String" validator="String">
+ -->
+ 
+<DomainModel xmlns="http://ae.ossys.com"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xsi:schemaLocation="http://ae.ossys.com http://ae.ossys.com/domainmodel.xsd">
+
+<!-- User -->
+<BusinessObject name="User" concurrent="true" atomic="true" auditable="true">
+
+	<!-- E-Mail -->
+	<Attribute	name="EMail" type="TEXT" minsize="7" maxsize="120" persistent="true" characterset="utf-8" 
+			required="true" validator="EMAIL" comment="The user's e-mail address" />
+	    
+	<!-- Password -->
+	<Attribute	name="Password" type="TEXT" minsize="5" maxsize="20" persistent="true" characterset="utf-8"
+				required="true" validator="" comment="The user's password." encryption="SHA-512" />
+
+	<!-- First Name -->
+	<Attribute	name="First name" type="TEXT" minsize="2" maxsize="30" persistent="true" characterset="utf-8" 
+			required="false" validator="/^[a-z ,.'-]+$/i" comment="The user's first name" />
+
+	<!-- Last Name -->
+	<Attribute	name="Last name" type="TEXT" minsize="2" maxsize="30" persistent="true" characterset="utf-8" 
+			required="false" validator="/^[a-z ,.'-]+$/i" comment="The user's last name" />
+
+	<Key type="UNIQUE">
+		<Attribute name="EMail" />
+	</Key>
+
+</BusinessObject>
+
+</DomainModel>

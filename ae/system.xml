@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SystemModel xmlns="http://ae.ossys.com"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xsi:schemaLocation="http://ae.ossys.com http://ae.ossys.com/systemmodel.xsd"
+			 key="xxx" api="1">
+
+<DataSource name="MongoDB"
+			type="MONGODB3"
+			host="localhost"
+			schema="nodejs"
+			port="27017"
+			username="nodejs"
+			password="password" />
+
+<!-- StickyFoot Web -->
+<Project	name="NodeJS Seed"
+			buildtool="GULP" >
+
+	<Domain name="nodejs"
+			src="ae/model.xml"
+			datasource="MongoDB"
+			language="NODEJS"
+			framework="EXPRESS"
+			orm="MONGOOSE"
+			tester="MOCHA" />
+
+</Project>
+
+</SystemModel>

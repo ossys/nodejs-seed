@@ -1,0 +1,12 @@
+.DS_Store
+.history
+.tern-project
+/.idea
+/*.iml
+/.classpath
+/.project
+/.settings
+public/
+node_modules/
+bower_components/
+npm-debug.log

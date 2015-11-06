@@ -1,0 +1,41 @@
+{
+  "name": "nodejs-seed",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ossys/nodejs-seed",
+  "authors": [
+    "Chad Cravens <chad.cravens@ossys.com>"
+  ],
+  "description": "NodeJS Seed Project",
+  "moduleType": [
+    "node"
+  ],
+  "license": "Proprietary",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-bootstrap": "~0.13.3",
+    "angular-sanitize": "~1.4.4",
+    "angular-ui": "~0.4.0",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap-sass": "~3.3.5",
+    "bootstrap-social": "~4.9.1",
+    "bourbon": "~4.0.2",
+    "components-font-awesome": "~4.4.0",
+    "fancybox": "~2.1.5",
+    "icomoon-sass": "~1.0.0",
+    "ionicons": "~2.0.0",
+    "jquery": "~2.1.4",
+    "normalize.css": "~3.0.2",
+    "respond": "~1.4.2",
+    "sass-bootstrap-glyphicons": "~1.0.0",
+    "simple-line-icons": "~2.2.0"
+  }
+}
